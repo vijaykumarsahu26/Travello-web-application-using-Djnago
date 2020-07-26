@@ -1,0 +1,16 @@
+{%extends 'base.html'%}
+{%block content%}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hyderabad</title>
+</head>
+
+{% if user.is_authenticated %}
+<h4>Hyderabad is greate city</h4>
+{% else %}
+<li><a href="login">Login</a></li>
+{% endif %}
+{%endblock content%}
+</html>
